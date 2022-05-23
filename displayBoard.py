@@ -1,5 +1,6 @@
+import os
 def display_board(board):
-    print('\n'*100)    
+    clear()
     print('   |   |')
     print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
     print('   |   |')
@@ -11,3 +12,6 @@ def display_board(board):
     print('   |   |')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |')
+
+def clear():
+    os.system('cls')
